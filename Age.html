@@ -15,6 +15,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
         <style>
+            #grid{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #paragraph{
+                margin:50px;
+                padding-left: 25px;
+            }
             a:link{
                 color:darkgreen;
                 text-decoration-line: none;
@@ -58,20 +66,25 @@
     </head>
     <body>
         <div class="b">
-        <h1><a href="index.html" style="color:black">Who am I?</h1></a>
+            <h1><a href="index.html" style="color:black">Who am I?</h1></a>
         </div>
-        <ol>
-            <li><a href="Name.html">Name</li></a>
-            <li><a href="Age.html" style="color:blueviolet">Age</li></a>
-            <li><a href="Apperance.html">Apperance</li></a>
-            <li><a href="Baseball.html">Baseball</a></li>
-            <li><a href="Others.html">Others</li></a>
-        </ol>
-        <div class="a">
-        <p>Second, I am <strong>21 years old</strong> in Korean age. My birth day is September 17th.<br>
-        I am undergrade in Hanyang University.<br>
-        I am 2nd grade and I enjoy my summer vacation now.
-        </p>
+        <div id="grid">
+            <ol>
+                <li><a href="Name.html">Name</li></a>
+                <li><a href="Age.html" style="color:blueviolet">Age</li></a>
+                <li><a href="Apperance.html">Apperance</li></a>
+                <li><a href="Baseball.html">Baseball</a></li>
+                <li><a href="Others.html">Others</li></a>
+            </ol>
+            <div id="paragraph">
+                <div class="a">
+                    <p>Second, I am <strong>21 years old</strong> in Korean age. My birth day is September 17th.<br>
+                    I am undergrade in Hanyang University.<br>
+                    I am 2nd grade and I enjoy my summer vacation now.
+                    </p>
+                    <img src="https://www.hanyang.ac.kr/documents/20182/73809/HYU_logo_singlecolor_png.png/b8aabfbe-a488-437d-b4a5-bd616d1577da?t=1474070795276" width="30%">
+                </div>
+            </div>
         </div>
     </body>
 </html>

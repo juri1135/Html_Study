@@ -15,6 +15,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <style>
+            #grid{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #paragraph{
+                margin:50px;
+                padding-left: 25px;
+            }
             a:link{
                 color:darkgreen;
                 text-decoration-line: none;
@@ -60,18 +68,20 @@
         <div class="b">
         <h1><a href="index.html" style="color:black">Who am I?</h1></a>
         </div>
-        <ol>
-            <li><a href="Name.html">Name</li></a>
-            <li><a href="Age.html">Age</li></a>
-            <li><a href="Apperance.html" style="color:blueviolet">Apperance</li></a>
-            <li><a href="Baseball.html">Baseball</a></li>
-            <li><a href="Others.html">Others</li></a>
-        </ol>
-        <div class="a">
-        <p> Then, I will show you my passport photo.<br>
-            <img src="passport.jpg" width="15%"><br>
-            Ha Ha... How about it? I think it is quite <text style="color:palevioletred">cute</style></text>. I hope you think so too.<br>
-            </p>
+        <div id="grid">
+            <ol>
+                <li><a href="Name.html">Name</li></a>
+                <li><a href="Age.html">Age</li></a>
+                <li><a href="Apperance.html" style="color:blueviolet">Apperance</li></a>
+                <li><a href="Baseball.html">Baseball</a></li>
+                <li><a href="Others.html">Others</li></a>
+            </ol>
+            <div class="a" id="paragraph">
+            <p> Then, I will show you my passport photo.<br>
+                <img src="passport.jpg" width="15%"><br>
+                Ha Ha... How about it? I think it is quite <text style="color:palevioletred">cute</style></text>. I hope you think so too.<br>
+                </p>
+            </div>
         </div>
     </body>
 </html>

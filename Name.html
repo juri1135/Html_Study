@@ -15,6 +15,14 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <style>
+            #grid{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #paragraph{
+                padding-left: 25px;
+                margin:50px
+            }
             a:link{
                 color:darkgreen;
                 text-decoration-line: none;
@@ -36,12 +44,12 @@
                 padding:18px;
                 padding-left:35px;
             }
-            div.a{
+            div.b{
                 font-size: 18px;
                 text-align: center;
                 font-family:  'Nunito', sans-serif;
             }
-            div.b{
+            div.a{
                 font-size: 30px;
                 border-bottom: darkgray solid 3px;
                 margin:0;
@@ -57,25 +65,29 @@
         </style>
     </head>
     <body>
-        <div class="b">
-        <h1><a href="index.html" style="color:black">Who am I?</h1></a>
-        </div>
-        <ol>
-            <li><a href="Name.html" style="color:blueviolet">Name</li></a>
-            <li><a href="Age.html">Age</li></a>
-            <li><a href="Apperance.html">Apperance</li></a>
-            <li><a href="Baseball.html">Baseball</a></li>
-            <li><a href="Others.html">Others</li></a>
-        </ol>
         <div class="a">
-        <p> 
-            My name is <strong><font color="orange"><u>Gwak Ju Ri</u></font></strong>
-            Gwak is my family name, Ju and Ri are Chinese character.<br>
-            Each means red and apple flower. So my name's means is red apple flower.<br>
-            I have a tatto means my name on my arm.<br>
-            <img src="red_apple_flower.jpg" width="20%"><br> When I was 20 years old, in my birthday, I got a tatto.<br>
-            I think it is so meaningful. Isn't it?
-        </p>
+            <h1><a href="index.html" style="color:black">Who am I?</h1></a>
+        </div>
+        <div id="grid">
+            <ol>
+                <li><a href="Name.html" style="color:blueviolet">Name</li></a>
+                <li><a href="Age.html">Age</li></a>
+                <li><a href="Apperance.html">Apperance</li></a>
+                <li><a href="Baseball.html">Baseball</a></li>
+                <li><a href="Others.html">Others</li></a>
+            </ol>
+            <div id="paragraph">
+            <div class="b">
+                    <p> 
+                        My name is <strong><font color="orange"><u>Gwak Ju Ri</u></font></strong>
+                        Gwak is my family name, Ju and Ri are Chinese character.<br>
+                        Each means red and apple flower. So my name's means is red apple flower.<br>
+                        I have a tatto means my name on my arm.<br>
+                        <img src="red_apple_flower.jpg" width="20%"><br> When I was 20 years old, in my birthday, I got a tatto.<br>
+                        I think it is so meaningful. Isn't it?
+                    </p>
+                </div>
+            </div>
         </div>
     </body>
 </html>

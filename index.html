@@ -14,7 +14,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <!--최소 사이즈가 600이니까 600부터 실행-->
         <style>
+            
+            #grid{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #paragraph{
+                padding-left: 20px;
+                margin:50px;
+            }
             a:link{
                 color:darkgreen;
                 text-decoration-line: none;
@@ -54,29 +64,46 @@
                 margin:0;
                 padding:20px;
             }
+            @media(max-width:800px){
+                div.b{
+                    font-size:25px;
+                }
+                #grid{
+                    display:block;
+                    text-align:center;
+                }
+                ol{
+                    border-right:none;
+                    margin:0;
+                }
+            }
         </style>
     </head>
     <body>
         <div class="b">
         <h1><a href="index.html" style="color:black">Who am I?</a></h1>
         </div>
-        <ol>
-            <li><a href="Name.html">Name</li></a>
-            <li><a href="Age.html">Age</li></a>
-            <li><a href="Apperance.html">Apperance</li></a>
-            <li><a href="Baseball.html">Baseball</a></li>
-            <li><a href="Others.html">Others</li></a>
-        </ol>
-        <div class="a">
-        <p style="text-align: center;">
-            <strong><font color="Green">Hello</font></strong>, Let me introduce myself. It is just test web site. So, I think it's is not complete.<br>
-            If you click the list 1~5 upper there, you can see the information about me.
-        
-        </p>
+        <div id="grid">
+            <ol>
+                <li><a href="Name.html">Name</li></a>
+                <li><a href="Age.html">Age</li></a>
+                <li><a href="Apperance.html">Apperance</li></a>
+                <li><a href="Baseball.html">Baseball</a></li>
+                <li><a href="Others.html">Others</li></a>
+            </ol>
+            <div id="paragraph">
+                <div class="a">
+                <p style="text-align: center;">
+                    <strong><font color="Green">Hello</font></strong>, Let me introduce myself. It is just test web site. So, I think it's is not complete.<br>
+                    If you click the list 1~5 upper there, you can see the information about me.
+                
+                </p>
+                </div>
+                <p style="text-align: center;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/URyNTQ0PDlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </p>
+            </div>
         </div>
-        <p style="text-align: center;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/URyNTQ0PDlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </p>
         <p>
             <div id="disqus_thread"></div>
             <script>
