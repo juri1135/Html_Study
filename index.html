@@ -51,11 +51,14 @@
                 font-family:  'Nunito', sans-serif;
             }
             div.b{
+                font-family: "Arial Black", sans-serif;
+                background-color:darkgray;
                 font-size: 30px;
                 border-bottom: darkgray solid 3px;
                 margin:0;
-                padding:20px;
+                padding:0;
                 text-align:center;
+                text-shadow: 3px 2px 2px gray;
             }
             body{
                 margin:0;
@@ -74,14 +77,18 @@
                 }
                 ol{
                     border-right:none;
+                }
+                div.c{
                     margin:0;
+                    padding-right:150px;
+                    text-align:left;
                 }
             }
         </style>
     </head>
     <body>
         <div class="b">
-        <h1><a href="index.html" style="color:black">Who am I?</a></h1>
+        <h1><a href="index.html" style="color:white">Who am I?</a></h1>
         </div>
         <div id="grid">
             <ol>
@@ -91,17 +98,19 @@
                 <li><a href="Baseball.html">Baseball</a></li>
                 <li><a href="Others.html">Others</li></a>
             </ol>
-            <div id="paragraph">
-                <div class="a">
-                <p style="text-align: center;">
-                    <strong><font color="Green">Hello</font></strong>, Let me introduce myself. It is just test web site. So, I think it's is not complete.<br>
-                    If you click the list 1~5 upper there, you can see the information about me.
-                
-                </p>
+            <div>
+                <div class="a" id="paragraph">
+                    <p style="text-align: center;">
+                        <strong><font color="Green">Hello</font></strong>, Let me introduce myself. It is just test web site. So, I think it's is not complete.<br>
+                        If you click the list 1~5 upper there, you can see the information about me.
+                    
+                    </p>
                 </div>
-                <p style="text-align: center;">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/URyNTQ0PDlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </p>
+                <div class="c">
+                    <p style="text-align: center;">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/URyNTQ0PDlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </p>
+                </div>
             </div>
         </div>
         <p>
