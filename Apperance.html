@@ -20,6 +20,10 @@
         <div class="b">
         <h1><a href="index.html" style="color:white">Who am I?</h1></a>
         </div>
+        <div class="button">
+        <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor='black'; document.querySelector('body').style.color='white';">
+        <input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='white'; document.querySelector('body').style.color='black';">
+        </div>
         <div id="grid">
             <ol>
                 <li><a href="Name.html">Name</li></a>
@@ -29,10 +33,12 @@
                 <li><a href="Others.html">Others</li></a>
             </ol>
             <div class="a" id="paragraph">
-            <p> Then, I will show you my passport photo.<br>
-                <img src="passport.jpg" width="15%"><br>
-                Ha Ha... How about it? I think it is quite <text style="color:palevioletred">cute</style></text>. I hope you think so too.<br>
+                <p> Then, I will show you my passport photo.<br>
+                    <img src="photo.jpg/passport.jpg" width="15%"><br>
+                    Ha Ha... How about it? I think it is quite <text style="color:palevioletred">cute</style></text>. 
                 </p>
+                <input type="button" value="cute!" onclick="alert('haha i know. thank you')">
+                <input type="button" value="not cute!" onclick="alert('? i will give you one more chance.')">
             </div>
         </div>
     </body>

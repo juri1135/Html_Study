@@ -48,6 +48,13 @@ h1{
     margin:0;
     padding:20px;
 }
+div.button{
+    border-right: darkgray solid 3px;
+    width:117px;
+    margin:0;
+    padding:18px;
+    padding-left:30;
+}
 @media(max-width:800px){
     #grid{
         display: block;
@@ -58,5 +65,9 @@ h1{
     }
     ol{
         border-right:none;
+    }
+    div.button{
+        display:block;
+        border-style:none;
     }
 }
