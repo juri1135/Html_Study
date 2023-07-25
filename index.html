@@ -102,8 +102,17 @@
         <h1><a href="index.html" style="color:white">Who am I?</a></h1>
         </div>
         <div class="button">
-            <input type="button" value="night" onclick="document.querySelector('body').style.backgroundColor='black'; document.querySelector('body').style.color='white';">
-            <input type="button" value="day" onclick="document.querySelector('body').style.backgroundColor='white'; document.querySelector('body').style.color='black';">
+            <input id="night_day" type="button" value="night" onclick="
+                if(document.querySelector('#night_day').value==='night'){
+                    document.querySelector('body').style.backgroundColor='black'; 
+                    document.querySelector('body').style.color='white';
+                    document.querySelector('#night_day').value='day';
+                }
+                else{
+                    document.querySelector('body').style.backgroundColor='white'; 
+                    document.querySelector('body').style.color='black';
+                    document.querySelector('#night_day').value='night'
+                }">
         </div>
         <div id="grid">
             <ol>
@@ -116,14 +125,16 @@
             <div>
                 <div class="a" id="paragraph">
                     <p style="text-align: center;">
-                        <strong><font color="Green">Hello</font></strong>, Let me introduce myself. It is just test web site. So, I think it's is not complete.<br>
-                        If you click the list 1~5 upper there, you can see the information about me.
+                        <strong><font color="Green">Hello</font></strong>, Let me introduce myself. 
+                            It is just test web site. So, I think it's is not complete.<br>
+                            If you click the list 1~5 upper there, you can see the information about me.
                     
                     </p>
                 </div>
                 <div class="c">
                     <p style="text-align: center;">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/URyNTQ0PDlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/URyNTQ0PDlI" 
+                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </p>
                 </div>
             </div>
