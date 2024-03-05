@@ -15,23 +15,41 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+
+        
     </head>
     <body>
+        
         <div class="b">
             <h1><a href="index.html" style="color:white">Who am I?</h1></a>
         </div>
         <div class="button">
+            
             <input id="night_day" type="button" value="night" onclick="
-                var target=target;
+                    var k=2;
+                    var list=document.querySelectorAll('a');
+                    var i=1;
                 if(document.querySelector('#night_day').value==='night'){
-                    target.style.backgroundColor='black'; 
-                    target.style.color='white';
+                    document.querySelector('body').style.backgroundColor='black'; 
+                    document.querySelector('body').style.color='white';
                     document.querySelector('#night_day').value='day';
+                    while(i<list.length){
+                        if(i!=k) list[i].style.color='powderblue';
+                        else list[i].style.color='hotpink';
+                        i=i+1;
+                    }
+                    
                 }
                 else{
-                    target.style.backgroundColor='white'; 
-                    target.style.color='black';
+                    document.querySelector('body').style.backgroundColor='white'; 
+                    document.querySelector('body').style.color='black';
                     document.querySelector('#night_day').value='night'
+                    while(i<list.length){
+                        if(i!=k) list[i].style.color='darkgray';
+                        else list[i].style.color='blueviolet';
+                        i=i+1;
+                    }
+                    
                 }">
         </div>
         <div id="grid">
