@@ -1,1 +1,3 @@
-# Html_Project
+# Html_Study
+간단하게 진행했던 웹 사이트 만들기입니다.
+html, css ,js를 공부하기 위해 간단하게 만들었던 페이지입니다.
